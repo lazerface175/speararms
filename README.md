@@ -19,6 +19,8 @@ index.html        All page markup
 css/styles.css    Design system + layout + print styles
 js/config.js      ★ EDIT THIS — business details, fees, state wait data
 js/main.js        Interactivity (nav, estimator, forms, scroll reveal)
+images/           Images used on the site (committed, served by Pages)
+images-src/       Local staging for raw images — gitignored, never uploaded
 .gitignore        Protects secrets and private FFL data
 ```
 

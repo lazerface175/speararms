@@ -46,6 +46,10 @@ form-1*
 # ---------- User-uploaded / generated private content ----------
 uploads/
 customer-uploads/
+
+# Local image staging — raw images live here, never uploaded.
+# Copy site-ready images into images/ instead.
+images-src/
 *.sql
 *.sqlite
 *.db
