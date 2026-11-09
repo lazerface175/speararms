@@ -1,0 +1,78 @@
+# ============================================================
+# SpearArms .gitignore
+# Protects secrets and private FFL business data from ever
+# being committed to the repository.
+# ============================================================
+
+# ---------- Secrets & credentials ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*.json
+*secret*
+*token*.json
+netrc
+
+# ---------- FFL private business data ----------
+# Bound books / A&D records / acquisition-disposition logs
+data/
+private/
+bound-book*
+*acquisition*disposition*
+*a-d*log*
+customers/
+customer-data/
+*.xlsx
+*.xls
+*.numbers
+
+# ATF / government correspondence & license documents
+atf-*
+*ffl*license*
+*license*.pdf
+*.ffo
+
+# NFA forms (Form 4 / Form 1 contain personal info)
+form-4*
+form-1*
+*tax-stamp*
+
+# ---------- User-uploaded / generated private content ----------
+uploads/
+customer-uploads/
+*.sql
+*.sqlite
+*.db
+
+# ---------- Backups & exports ----------
+backup/
+backups/
+*.bak
+*.backup
+*.old
+*.orig
+
+# ---------- Dependencies & build output ----------
+node_modules/
+dist/
+build/
+
+# ---------- Logs & temp ----------
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Editor / OS ----------
+.vscode/
+.idea/
+*.swp
+*~
